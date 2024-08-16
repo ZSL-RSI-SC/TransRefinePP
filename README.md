@@ -23,7 +23,7 @@ $ pip install wandb
 
 **Downloading datasets**
 
-We trained the model "SuperCAT" on four prominent benchmark datasets of the zero-shot scene classification in remote sensing images: [UCM21](http://weegee.vision.ucmerced.edu/datasets/landuse.html), [AID30](https://captain-whu.github.io/AID/), NWPU45, and WHU-RS19. Please download NWPU and RS19 datasets in your way. To train the "SuperCAT", first, you should download these datasets. Then, decompress and organize them as follows: 
+We trained the model "SuperCAT" on four prominent benchmark datasets of the zero-shot scene classification in remote sensing images: [UCM21](http://weegee.vision.ucmerced.edu/datasets/landuse.html), [AID30](https://captain-whu.github.io/AID/), NWPU45. Please download the NWPU dataset in your own way. To train the "SuperCAT", first, you should download these datasets. Then, decompress and organize them as follows: 
 ```
 .
 ├── data
@@ -87,7 +87,7 @@ Note: Adjust the "split_idx" value in the preprocessing.py file according to the
 
 **Training SuperCAT**
 
-In `./wandb_config`, we provide parameter settings for UCM21, AID30, NWPU45, and RS19 for zero-shot learning tasks. 
+In `./wandb_config`, we provide parameter settings for UCM21, AID30, and NWPU45 for zero-shot learning tasks. 
 Run the given commands to train the "SuperCAT" from scratch:
 
 ```
