@@ -80,7 +80,6 @@ Run the specified commands to extract the visual features of four datasets:
 $ python preprocessing.py --dataset UCM --compression --device cuda:0 
 $ python preprocessing.py --dataset AID --compression --device cuda:0
 $ python preprocessing.py --dataset NWPU --compression --device cuda:0
-$ python preprocessing.py --dataset RSD --compression --device cuda:0
 
 Note: Adjust the "split_idx" value in the preprocessing.py file according to the dataset path if you get FileNotFoundError while running the above code.
 ```
