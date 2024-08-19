@@ -52,7 +52,7 @@ Please follow the instructions we have included below to get res101.mat and att_
 
 Run the following codes one after the other.
 ```
-$ cd data/xlsa17/code
+$ cd splits_creation_process
 ```
 ```
 $ python mataw.py
@@ -68,6 +68,9 @@ This Matlab file creates res101.mat file with the help of {dataset}_img.csv and 
 $ python dataset_create.py
 ```
 Initially, set the dataset path and run the dataset_create.py file. This code obtains att_splits.mat file. 
+
+
+>> 
 
 Then, place **res101.mat** and **att_splits.mat** files into SuperCAT/data/xlsa17/data/{dataset}/...
 
