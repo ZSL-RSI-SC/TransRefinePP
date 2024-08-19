@@ -67,10 +67,10 @@ This Matlab file creates res101.mat file with the help of {dataset}_img.csv and 
 ```
 $ python dataset_create.py
 ```
-Initially, set the dataset path and run the dataset_create.py file. This code obtains att_splits.mat file. 
-
-
->> 
+```
+>> merge_train_val
+```
+Initially, set the dataset path and run the dataset_create.py file. This code obtains att_splits.mat file, and merge-train_val.m mat file combines train and validation locations. 
 
 Then, place **res101.mat** and **att_splits.mat** files into SuperCAT/data/xlsa17/data/{dataset}/...
 
