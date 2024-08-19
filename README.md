@@ -3,7 +3,7 @@
 
 This GitHub repository contains the training code for the paper  "** SuperCAT: Super Resolution and Cross Semantic Attribute-guided Transformer based Feature Refinement for Zero-Shot Remote Sensing Scene Classification **". 
 
-These semantic attributes and attribute over values are available at ./data/xlsa17/code/...
+These semantic attributes and attribute over values are available at the splits creation process folder.
 
 **The Framework for the SuperCAT**
 
@@ -23,7 +23,11 @@ $ pip install wandb
 
 **Downloading datasets**
 
-We trained the model "SuperCAT" on four prominent benchmark datasets of the zero-shot scene classification in remote sensing images: [UCM21](http://weegee.vision.ucmerced.edu/datasets/landuse.html), [AID30](https://captain-whu.github.io/AID/), NWPU45. Please download the NWPU dataset in your own way. To train the "SuperCAT", first, you should download these datasets. Then, decompress and organize them as follows: 
+We trained the model "SuperCAT" on three prominent benchmark datasets of the zero-shot scene classification in remote sensing images: [UCM21](http://weegee.vision.ucmerced.edu/datasets/landuse.html), [AID30](https://captain-whu.github.io/AID/), NWPU45. Please download the NWPU dataset in your own way. To train the "SuperCAT", first, you should download these datasets. Then, use the following link to obtain super-resolution images. 
+
+https://github.com/zsyOAOA/ResShift
+
+Further, organize them as follows: 
 ```
 .
 ├── data
@@ -33,18 +37,18 @@ We trained the model "SuperCAT" on four prominent benchmark datasets of the zero
 │
 └── ···
 ```
-Specifically, the samples of the UCM dataset are organized as follows: 
+Specifically, the super-resolution images of the UCM dataset are organized as follows: 
 ```
 ├── data
-│   ├── UCM/runway/runway89.tif
-|   |__ UCM/river/river35.tif
-|   |__ UCM/sparseresidential/sparseresidential25.tif
+│   ├── UCM/runway/runway89.png
+|   |__ UCM/river/river35.png
+|   |__ UCM/sparseresidential/sparseresidential25.png
 │   |__ ...
 └── ···
 ```
 **Generaring res101.mat and att_splits.mat files**
 
-Please follow the instructions we have included below to obtain res101.mat and att_splits.mat files, and place them in SuperCAT/data/xlsa17/data/{dataset}/... 
+Please follow the instructions we have included below to get res101.mat and att_splits.mat files, and place them in SuperCAT/data/xlsa17/data/{dataset}/... 
 
 Run the following codes one after the other.
 ```
