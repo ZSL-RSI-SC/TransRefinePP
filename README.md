@@ -74,8 +74,8 @@ Then, place **res101.mat** and **att_splits.mat** files into TransRefine++/data/
 
 Example for the UCM dataset: 
 ```
-          TransRefine++/data/xlsa17/data/UCM/res101.mat    
-          TransRefine++/data/xlsa17/data/UCM/att_splits.mat
+          TransRefinePP/data/xlsa17/data/UCM/res101.mat    
+          TransRefinePP/data/xlsa17/data/UCM/att_splits.mat
 ```
 **Extracting visual features**
 
